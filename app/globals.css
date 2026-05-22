@@ -31,9 +31,10 @@ body {
     details.svc-cat[open] > summary .cat-chev { transform: rotate(180deg); }
     .cat-chev { transition: transform 220ms ease; }
     @media (min-width: 768px) {
-      details.svc-cat > summary { cursor: default; }
+      /* Desktop: no accordion at all. Summary is a static heading that cannot
+         toggle (pointer-events:none kills the <details> collapse), content stays open. */
+      details.svc-cat > summary { cursor: default; pointer-events: none; }
       details.svc-cat .cat-chev { display: none; }
-      /* On desktop there is no accordion: every category's tiles are always visible. */
       details.svc-cat > div { display: block !important; }
     }
 #oat-footer .oat-fc details>summary::-webkit-details-marker,
