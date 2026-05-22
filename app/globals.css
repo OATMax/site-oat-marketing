@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0A0A0A;
+  --secondary: #F5F0E8;
+  --accent: #C8922A;
+  --neutral-50: #FAFAF8;
+  --neutral-900: #111111;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: #fff;
+  color: var(--primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.font-heading { font-family: var(--font-geist), system-ui, sans-serif; }
+.font-mono { font-family: var(--font-geist-mono), monospace; }
+
+/* ---- component styles ported from v10 wireframe ---- */
+.svc-tile { transition: background-color 180ms ease, border-color 180ms ease; }
+    .svc-tile:hover { background-color: rgba(255,255,255,0.6); }
+    .svc-tile:hover .svc-arrow { opacity: 0.9; transform: translate(2px,-2px); }
+    .svc-arrow { transition: opacity 180ms ease, transform 180ms ease; }
+    /* Mobile accordion: <details> rotates the chevron when open */
+    details.svc-cat > summary { list-style: none; cursor: pointer; }
+    details.svc-cat > summary::-webkit-details-marker { display: none; }
+    details.svc-cat[open] > summary .cat-chev { transform: rotate(180deg); }
+    .cat-chev { transition: transform 220ms ease; }
+    @media (min-width: 768px) {
+      details.svc-cat > summary { cursor: default; }
+      details.svc-cat .cat-chev { display: none; }
+    }
+#oat-footer .oat-fc details>summary::-webkit-details-marker,
+  #oat-footer .oat-fc details>summary::marker{display:none;content:'';}
+  #oat-footer .oat-fc .oat-chev{transition:transform .18s ease;flex-shrink:0;}
+  #oat-footer .oat-fc details[open] .oat-chev{transform:rotate(180deg);}
+  @media(min-width:768px){
+    #oat-footer .oat-fc details>*:not(summary){display:block!important;}
+    #oat-footer .oat-fc summary{pointer-events:none;cursor:default;}
+    #oat-footer .oat-fc summary .oat-chev{display:none;}
+  }
