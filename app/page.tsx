@@ -268,8 +268,8 @@ export default function Home() {
     <div className="space-y-4 md:space-y-16 lg:space-y-24">
 
       {/* Category 01 · Search & Paid */}
-      <details className="svc-cat group">
-        <summary className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
+      <details className="svc-cat group" open>
+        <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>01</span>
@@ -281,10 +281,8 @@ export default function Home() {
             </div>
             <p className="hidden lg:block text-[13px] leading-snug" style={{ color: 'var(--primary)', opacity: '0.4' }}>Get found by ready-to-buy customers</p>
           </div>
-          <div className="hidden md:block"></div>
         </summary>
-        <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
-          <div className="hidden lg:block"></div>
+        <div className="grid grid-cols-1 gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
               <a href="/services/seo" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
@@ -326,8 +324,8 @@ export default function Home() {
         </div>
       </details>
       {/* Category 02 · Outreach */}
-      <details className="svc-cat group">
-        <summary className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
+      <details className="svc-cat group" open>
+        <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>02</span>
@@ -339,10 +337,8 @@ export default function Home() {
             </div>
             <p className="hidden lg:block text-[13px] leading-snug" style={{ color: 'var(--primary)', opacity: '0.4' }}>Reach + nurture your audience where they already are</p>
           </div>
-          <div className="hidden md:block"></div>
         </summary>
-        <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
-          <div className="hidden lg:block"></div>
+        <div className="grid grid-cols-1 gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
               <a href="/services/social-media" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
@@ -366,8 +362,8 @@ export default function Home() {
         </div>
       </details>
       {/* Category 03 · Brand */}
-      <details className="svc-cat group">
-        <summary className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
+      <details className="svc-cat group" open>
+        <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>03</span>
@@ -379,10 +375,8 @@ export default function Home() {
             </div>
             <p className="hidden lg:block text-[13px] leading-snug" style={{ color: 'var(--primary)', opacity: '0.4' }}>The on-screen surface customers actually see</p>
           </div>
-          <div className="hidden md:block"></div>
         </summary>
-        <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
-          <div className="hidden lg:block"></div>
+        <div className="grid grid-cols-1 gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
               <a href="/services/websites" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
@@ -406,8 +400,8 @@ export default function Home() {
         </div>
       </details>
       {/* Category 04 · Insight & Training */}
-      <details className="svc-cat group">
-        <summary className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
+      <details className="svc-cat group" open>
+        <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>04</span>
@@ -419,10 +413,8 @@ export default function Home() {
             </div>
             <p className="hidden lg:block text-[13px] leading-snug" style={{ color: 'var(--primary)', opacity: '0.4' }}>Get smarter about your market + your team</p>
           </div>
-          <div className="hidden md:block"></div>
         </summary>
-        <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
-          <div className="hidden lg:block"></div>
+        <div className="grid grid-cols-1 gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
               <a href="/services/market-research" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">

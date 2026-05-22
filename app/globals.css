@@ -33,6 +33,8 @@ body {
     @media (min-width: 768px) {
       details.svc-cat > summary { cursor: default; }
       details.svc-cat .cat-chev { display: none; }
+      /* On desktop there is no accordion: every category's tiles are always visible. */
+      details.svc-cat > div { display: block !important; }
     }
 #oat-footer .oat-fc details>summary::-webkit-details-marker,
   #oat-footer .oat-fc details>summary::marker{display:none;content:'';}
