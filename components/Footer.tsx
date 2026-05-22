@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const SERVICES = [
   { href: "/services/seo", label: "SEO" },
@@ -34,15 +35,9 @@ export function Footer() {
           {/* Brand + social + CTA */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pt-14 md:pt-24 pb-12 md:pb-16 border-b border-white/[0.08]">
             <div>
-              <svg width="30" height="40" viewBox="0 0 30 40" fill="none" className="mb-5" aria-hidden="true">
-                <ellipse cx="15" cy="20" rx="10.5" ry="18" stroke="#C8922A" strokeWidth="1.2" />
-                <line x1="15" y1="2" x2="15" y2="38" stroke="#C8922A" strokeWidth="1.2" />
-                <path d="M5.5 12 Q10 14.5 15 12 Q20 9.5 24.5 12" stroke="#C8922A" strokeWidth="0.85" opacity="0.55" />
-                <path d="M5 17.5 Q10 20 15 17.5 Q20 15 25 17.5" stroke="#C8922A" strokeWidth="0.85" opacity="0.55" />
-                <path d="M5 23 Q10 25.5 15 23 Q20 20.5 25 23" stroke="#C8922A" strokeWidth="0.85" opacity="0.55" />
-                <path d="M5.5 28.5 Q10 31 15 28.5 Q20 26 24.5 28.5" stroke="#C8922A" strokeWidth="0.85" opacity="0.55" />
-              </svg>
-              <div className="font-heading font-bold text-white text-2xl md:text-[26px] tracking-tight mb-2.5">OAT Marketing</div>
+              <div className="mb-5 inline-flex rounded-lg bg-[var(--secondary)] px-4 py-3">
+                <Image src="/brand/oat-logo.png" alt="OAT Marketing" width={120} height={46} className="h-9 w-auto" />
+              </div>
               <p className="text-white/40 text-sm leading-[1.75]" style={{ maxWidth: "22rem" }}>Not your average agency. Twenty-plus years compounding growth, for start-ups, enterprises, and causes that deserve real partnership.</p>
             </div>
             <div className="flex flex-col items-start md:items-end gap-5">
