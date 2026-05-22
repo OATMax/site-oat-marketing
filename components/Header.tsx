@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { SERVICES } from "@/lib/services";
 
 const NAV = [
   { href: "/services", label: "Services" },
@@ -16,7 +17,6 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Close the mobile menu whenever the route changes.
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
@@ -29,7 +29,44 @@ export function Header() {
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">
-          {NAV.map((item) => (
+          {/* Services: hover/focus dropdown on desktop */}
+          <li className="group relative">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-1 text-sm font-medium text-primary/70 transition-colors hover:text-primary group-focus-within:text-primary"
+            >
+              Services
+              <svg className="h-3 w-3 transition-transform group-hover:rotate-180" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+            {/* Dropdown panel */}
+            <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="w-[600px] rounded-xl border border-black/[0.08] bg-white p-3 shadow-xl shadow-black/10">
+                <div className="grid grid-cols-2 gap-1">
+                  {SERVICES.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={`/services/${s.slug}`}
+                      className="rounded-lg p-3 transition-colors hover:bg-[var(--neutral-50)]"
+                    >
+                      <div className="font-heading text-sm font-semibold text-[var(--primary)]">{s.name}</div>
+                      <div className="mt-0.5 text-[12px] leading-snug" style={{ color: "rgba(10,10,10,0.5)" }}>{s.tagline}</div>
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href="/services"
+                  className="mt-1 flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-semibold text-[var(--primary)] transition-colors hover:bg-[var(--neutral-50)]"
+                >
+                  View all services
+                  <svg className="h-3.5 w-3.5 text-[var(--accent)]" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                </Link>
+              </div>
+            </div>
+          </li>
+
+          {NAV.slice(1).map((item) => (
             <li key={item.href}>
               <Link href={item.href} className="text-sm font-medium text-primary/70 transition-colors hover:text-primary">
                 {item.label}
@@ -46,7 +83,6 @@ export function Header() {
             Get in touch
           </Link>
 
-          {/* Hamburger (mobile only) */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -68,7 +104,6 @@ export function Header() {
         </div>
       </nav>
 
-      {/* Mobile menu panel */}
       {open && (
         <div id="mobile-menu" className="border-t border-black/[0.06] bg-[var(--neutral-50)] md:hidden">
           <ul className="flex flex-col px-5 py-2">
