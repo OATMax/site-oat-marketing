@@ -169,7 +169,7 @@ export default function Home() {
       </a>
 
       {/* ── Card 2: SMEs (white, top-bordered) ── */}
-      <a href="/who-we-work-with/smes" className="flex-shrink-0 snap-start w-[85vw] max-w-sm md:w-auto md:max-w-none
+      <a href="/who-we-work-with/sme" className="flex-shrink-0 snap-start w-[85vw] max-w-sm md:w-auto md:max-w-none
                 flex flex-col no-underline
                 bg-white
                 p-6 md:p-9
@@ -216,7 +216,7 @@ export default function Home() {
       </a>
 
       {/* ── Card 3: Not-For-Profits (warm) ── */}
-      <a href="/who-we-work-with/not-for-profits" className="flex-shrink-0 snap-start w-[85vw] max-w-sm md:w-auto md:max-w-none
+      <a href="/who-we-work-with/not-for-profit" className="flex-shrink-0 snap-start w-[85vw] max-w-sm md:w-auto md:max-w-none
                 flex flex-col no-underline
                 bg-[var(--secondary)]
                 p-6 md:p-9
@@ -329,7 +329,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="hidden lg:block"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
-              <a href="/services/seo/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/seo" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>SEO</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -338,7 +338,7 @@ export default function Home() {
                 </div>
                 <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Long-term organic rankings — content + technical + on-page.</p>
               </a>
-              <a href="/services/local-seo/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/local-seo" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Local SEO</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -347,7 +347,7 @@ export default function Home() {
                 </div>
                 <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Maps + neighborhood-level discovery for brick-and-mortar.</p>
               </a>
-              <a href="/services/paid-ads/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/paid-ads" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Paid Ads</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -356,7 +356,7 @@ export default function Home() {
                 </div>
                 <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Google + Meta + LinkedIn — managed for ROAS, not impressions.</p>
               </a>
-              <a href="/services/google-ad-grant/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/google-ad-grant" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Google Ad Grant</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -387,7 +387,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="hidden lg:block"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
-              <a href="/services/social-media/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/social-media" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Social Media</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -396,7 +396,7 @@ export default function Home() {
                 </div>
                 <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Strategy + content + community for the platforms that move your numbers.</p>
               </a>
-              <a href="/services/email/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/email" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Email Marketing</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -427,7 +427,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="hidden lg:block"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
-              <a href="/services/websites/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/websites" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Websites</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -436,7 +436,7 @@ export default function Home() {
                 </div>
                 <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Conversion-built sites + landing pages on a modern stack.</p>
               </a>
-              <a href="/services/graphic-design/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/graphic-design" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Graphic Design</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -467,7 +467,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[196px_1fr] gap-3 lg:gap-12 pt-3 md:pt-6">
           <div className="hidden lg:block"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '1px', background: 'rgba(10,10,10,0.09)' }}>
-              <a href="/services/market-research/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/market-research" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>Market Research</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
@@ -476,7 +476,7 @@ export default function Home() {
                 </div>
                 <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Audience + competitive + opportunity studies that inform every decision.</p>
               </a>
-              <a href="/services/workshops/" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
+              <a href="/services/oat-workshops" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-heading text-lg md:text-xl font-semibold leading-tight" style={{ color: 'var(--primary)' }}>OAT Workshops</h3>
                   <svg className="svc-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.4' }}>
