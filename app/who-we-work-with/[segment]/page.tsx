@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/ui";
 import { SEGMENTS, getSegment } from "@/lib/segments";
@@ -31,12 +32,11 @@ export default async function SegmentPage({ params }: { params: Promise<{ segmen
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-[var(--neutral-50)] px-6 py-20 md:px-10 md:py-32">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 flex justify-center">
-          <div className="h-[40vh] w-[90vw] max-w-3xl translate-y-[-30%] rounded-full opacity-[0.12]" style={{ background: "radial-gradient(ellipse at 50% 0%, #C8922A 0%, transparent 68%)" }}></div>
-        </div>
+        <Image src={`/images/seg-${seg.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-50" style={{ objectPosition: "center right" }} />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: "linear-gradient(90deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.7) 55%, rgba(250,250,248,0.5) 100%)" }}></div>
         <div className="relative z-10 mx-auto max-w-3xl">
           <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: "var(--accent)" }}>
-            {seg.number} — {seg.audience}
+            {seg.number} · {seg.audience}
           </p>
           <h1 className="font-heading text-[2.5rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-6xl">{seg.name}</h1>
           <p className="mt-5 font-heading text-lg font-semibold md:text-xl" style={{ color: "var(--accent)" }}>{seg.tagline}</p>
@@ -51,7 +51,7 @@ export default async function SegmentPage({ params }: { params: Promise<{ segmen
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {seg.challenges.map((c) => (
               <div key={c} className="flex gap-3.5 border border-black/[0.07] bg-[var(--neutral-50)] p-6">
-                <span className="font-heading text-base font-bold" style={{ color: "var(--accent)" }} aria-hidden="true">—</span>
+                <span className="font-heading text-base font-bold" style={{ color: "var(--accent)" }} aria-hidden="true">·</span>
                 <span className="text-[15px] leading-relaxed" style={{ color: "rgba(10,10,10,0.72)" }}>{c}</span>
               </div>
             ))}

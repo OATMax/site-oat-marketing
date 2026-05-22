@@ -6,7 +6,7 @@ import { getPublishedPosts, urlFor } from "@/lib/sanity.client";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Practical marketing insight from the OAT Marketing team — SEO, paid, content, and growth strategy worth your time.",
+  description: "Practical marketing insight from the OAT Marketing team, SEO, paid, content, and growth strategy worth your time.",
   alternates: { canonical: "/blog" },
 };
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { PageHero, CtaBanner } from "@/components/ui";
 import { SERVICES, SERVICE_CATEGORIES } from "@/lib/services";
 
@@ -16,7 +17,7 @@ export default function ServicesIndexPage() {
       <PageHero
         eyebrow="Services"
         title={<>Everything you need, under one roof.</>}
-        intro="Ten disciplines, one team, one strategy. Use what you need today and grow into the rest — without juggling a dozen vendors."
+        intro="Ten disciplines, one team, one strategy. Use what you need today and grow into the rest, without juggling a dozen vendors."
       />
 
       <section className="bg-white px-6 py-16 md:px-10 md:py-28">
@@ -36,8 +37,12 @@ export default function ServicesIndexPage() {
                     <Link
                       key={s.slug}
                       href={`/services/${s.slug}`}
-                      className="svc-tile group relative flex flex-col border border-black/[0.07] bg-[var(--neutral-50)] p-7 no-underline transition-transform duration-300 hover:-translate-y-1"
+                      className="svc-tile group relative flex flex-col overflow-hidden border border-black/[0.07] bg-[var(--neutral-50)] no-underline transition-transform duration-300 hover:-translate-y-1"
                     >
+                      <div className="relative aspect-[16/9] w-full overflow-hidden bg-white">
+                        <Image src={`/images/svc-${s.slug}.png`} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+                      </div>
+                      <div className="flex flex-1 flex-col p-7">
                       <h3 className="font-heading text-[1.375rem] font-bold leading-tight text-[var(--primary)]">{s.name}</h3>
                       <p className="mt-1 text-[13px] font-medium" style={{ color: "var(--accent)" }}>{s.tagline}</p>
                       <p className="mt-4 flex-1 text-sm leading-relaxed" style={{ color: "rgba(10,10,10,0.6)" }}>{s.summary}</p>
@@ -47,6 +52,7 @@ export default function ServicesIndexPage() {
                           <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </span>
+                      </div>
                     </Link>
                   ))}
                 </div>
@@ -56,7 +62,7 @@ export default function ServicesIndexPage() {
         </div>
       </section>
 
-      <CtaBanner heading="Not sure where to start?" body="Tell us your goals and we'll recommend the mix that fits — including the services you don't need yet." cta="Get a recommendation" />
+      <CtaBanner heading="Not sure where to start?" body="Tell us your goals and we'll recommend the mix that fits, including the services you don't need yet." cta="Get a recommendation" />
     </>
   );
 }

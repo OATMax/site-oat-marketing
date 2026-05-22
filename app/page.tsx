@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "OAT Marketing — Not Your Average Agency",
+  title: "OAT Marketing: Not Your Average Agency",
   description:
-    "Full-service digital marketing for start-ups, SMEs, and non-profits — SEO, paid ads, social, email, websites, and more. Built on partnership and 20+ years of results.",
+    "Full-service digital marketing for start-ups, SMEs, and non-profits, SEO, paid ads, social, email, websites, and more. Built on partnership and 20+ years of results.",
   alternates: { canonical: "/" },
 };
 
@@ -13,11 +13,11 @@ export default function Home() {
 {/* hero (hero-A) */}
 <section id="hero" className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden bg-[var(--neutral-50)] px-5 py-16 md:py-28">
 
-  {/* Generated hero visual — softly faded so the centered headline stays legible */}
+  {/* Generated hero visual, softly faded so the centered headline stays legible */}
   <Image src="/images/hero.png" alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-[0.55]" style={{ objectPosition: 'center right' }} />
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: 'radial-gradient(ellipse at 50% 45%, rgba(250,250,248,0.86) 28%, rgba(250,250,248,0.45) 66%, rgba(250,250,248,0.78) 100%)' }}></div>
 
-  {/* Amber radial bloom — top center */}
+  {/* Amber radial bloom, top center */}
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 flex justify-center">
     <div className="h-[55vh] w-[90vw] max-w-3xl translate-y-[-40%] rounded-full opacity-[0.13]" style={{ background: 'radial-gradient(ellipse at 50% 0%, #C8922A 0%, transparent 68%)' }}></div>
   </div>
@@ -31,7 +31,7 @@ export default function Home() {
     <rect width="100%" height="100%" filter="url(#hero-noise)" />
   </svg>
 
-  {/* Abstract crosshair / targeting mark — editorial right-float */}
+  {/* Abstract crosshair / targeting mark, editorial right-float */}
   <svg aria-hidden="true" className="pointer-events-none absolute right-[-8%] top-[12%] z-0 h-[220px] w-[220px] opacity-[0.05] md:h-[440px] md:w-[440px] md:right-[1%] md:top-[8%] md:opacity-[0.07]" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="220" cy="220" r="210" stroke="#0A0A0A" strokeWidth="0.75" />
     <circle cx="220" cy="220" r="135" stroke="#0A0A0A" strokeWidth="0.5" strokeDasharray="3 9" />
@@ -41,7 +41,7 @@ export default function Home() {
     <circle cx="220" cy="220" r="2" fill="#C8922A" />
   </svg>
 
-  {/* Mirror mark — editorial left-float, smaller */}
+  {/* Mirror mark, editorial left-float, smaller */}
   <svg aria-hidden="true" className="pointer-events-none absolute left-[-10%] bottom-[14%] z-0 h-[140px] w-[140px] opacity-[0.04] md:h-[260px] md:w-[260px] md:left-[0%] md:opacity-[0.05]" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="130" cy="130" r="124" stroke="#0A0A0A" strokeWidth="0.75" />
     <circle cx="130" cy="130" r="80" stroke="#C8922A" strokeWidth="0.5" strokeDasharray="2 6" />
@@ -76,10 +76,10 @@ export default function Home() {
 
     {/* Subhead */}
     <p className="mx-auto mb-11 max-w-[500px] text-[0.95rem] leading-[1.7] text-[var(--primary)] opacity-50 md:mb-13 md:max-w-[540px] md:text-[1.05rem]">
-      True partnerships — not vendor contracts. Full transparency, no hidden fees, and strategy built to build on itself. For start-ups, businesses, and nonprofits.
+      True partnerships, not vendor contracts. Full transparency, no hidden fees, and strategy built to build on itself. For start-ups, businesses, and nonprofits.
     </p>
 
-    {/* Primary CTA — single, high-conviction */}
+    {/* Primary CTA, single, high-conviction */}
     <a href="/contact" className="group inline-flex items-center gap-2.5 rounded-full bg-[var(--primary)] px-7 py-3.5 text-sm font-medium tracking-wide text-[var(--neutral-50)] shadow-md shadow-black/10 transition-all duration-200 hover:bg-[#1a1a1a] hover:shadow-lg hover:shadow-black/15 md:px-8 md:py-4 md:text-[0.95rem]">
       Start a conversation
       <svg aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@ export default function Home() {
 
   </div>
 
-  {/* Scroll cue — desktop only */}
+  {/* Scroll cue, desktop only */}
   <div aria-hidden="true" className="absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
     <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-[var(--primary)] opacity-25">Scroll</span>
     <svg width="1" height="28" viewBox="0 0 1 28" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +136,7 @@ export default function Home() {
         {/* Ghost numeral */}
         <span className="absolute -right-3 top-0 font-heading text-[9rem] leading-none font-bold select-none pointer-events-none" style={{ color: 'rgba(255,255,255,0.04)' }} aria-hidden="true">01</span>
 
-        {/* Icon — upward trajectory mark (mb-auto anchors content to bottom) */}
+        {/* Icon, upward trajectory mark (mb-auto anchors content to bottom) */}
         <div className="relative z-10 mb-auto">
           <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M19 32V11" stroke="#C8922A" strokeWidth="1.25" strokeLinecap="round" opacity="0.3" />
@@ -149,7 +149,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-2.5">
           <p className="font-mono text-[9px] tracking-[0.22em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>
-            01 — For founders
+            01 · For founders
           </p>
           <h3 className="font-heading text-[1.625rem] md:text-[1.875rem] font-bold text-[var(--secondary)] leading-tight">
             Start-ups
@@ -183,7 +183,7 @@ export default function Home() {
         {/* Ghost numeral */}
         <span className="absolute -right-3 top-0 font-heading text-[9rem] leading-none font-bold select-none pointer-events-none" style={{ color: 'rgba(10,10,10,0.04)' }} aria-hidden="true">02</span>
 
-        {/* Icon — 4-quad grid, bottom-right quad highlighted */}
+        {/* Icon, 4-quad grid, bottom-right quad highlighted */}
         <div className="relative z-10 mb-auto">
           <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect x="5" y="5" width="12" height="12" rx="2" stroke="#0A0A0A" strokeWidth="1.25" opacity="0.18" />
@@ -196,7 +196,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-2.5">
           <p className="font-mono text-[9px] tracking-[0.22em] uppercase" style={{ color: 'rgba(10,10,10,0.25)' }}>
-            02 — For operators
+            02 · For operators
           </p>
           <h3 className="font-heading text-[1.625rem] md:text-[1.875rem] font-bold text-[var(--primary)] leading-tight">
             SMEs
@@ -227,7 +227,7 @@ export default function Home() {
         {/* Ghost numeral */}
         <span className="absolute -right-3 top-0 font-heading text-[9rem] leading-none font-bold select-none pointer-events-none" style={{ color: 'rgba(10,10,10,0.05)' }} aria-hidden="true">03</span>
 
-        {/* Icon — radial/hub pattern (community reach) */}
+        {/* Icon, radial/hub pattern (community reach) */}
         <div className="relative z-10 mb-auto">
           <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="19" cy="19" r="13" stroke="#0A0A0A" strokeWidth="1.25" opacity="0.14" />
@@ -246,7 +246,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-2.5">
           <p className="font-mono text-[9px] tracking-[0.22em] uppercase" style={{ color: 'rgba(10,10,10,0.25)' }}>
-            03 — For missions
+            03 · For missions
           </p>
           <h3 className="font-heading text-[1.625rem] md:text-[1.875rem] font-bold text-[var(--primary)] leading-tight">
             Not-For-Profits
@@ -317,7 +317,7 @@ export default function Home() {
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>01</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Search & Paid</span>
-              {/* Mobile chevron — hidden md+ via CSS */}
+              {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
                 <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -336,7 +336,7 @@ export default function Home() {
                     <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Long-term organic rankings — content + technical + on-page.</p>
+                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Long-term organic rankings, content + technical + on-page.</p>
               </a>
               <a href="/services/local-seo" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
@@ -354,7 +354,7 @@ export default function Home() {
                     <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Google + Meta + LinkedIn — managed for ROAS, not impressions.</p>
+                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Google + Meta + LinkedIn, managed for ROAS, not impressions.</p>
               </a>
               <a href="/services/google-ad-grant" className="svc-tile flex flex-col justify-between p-5 md:p-7" style={{ background: 'var(--neutral-50)', minHeight: '170px' }}>
                 <div className="flex items-start justify-between gap-3">
@@ -363,7 +363,7 @@ export default function Home() {
                     <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>$10K/mo ad credit for qualified non-profits — managed end-to-end.</p>
+                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>$10K/mo ad credit for qualified non-profits, managed end-to-end.</p>
               </a>
           </div>
         </div>
@@ -375,7 +375,7 @@ export default function Home() {
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>02</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Outreach</span>
-              {/* Mobile chevron — hidden md+ via CSS */}
+              {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
                 <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -403,7 +403,7 @@ export default function Home() {
                     <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Lifecycle + broadcast — flows that compound while you sleep.</p>
+                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Lifecycle + broadcast, flows that compound while you sleep.</p>
               </a>
           </div>
         </div>
@@ -415,7 +415,7 @@ export default function Home() {
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>03</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Brand</span>
-              {/* Mobile chevron — hidden md+ via CSS */}
+              {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
                 <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -455,7 +455,7 @@ export default function Home() {
             <div className="flex items-center gap-3 w-full lg:w-auto">
               <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>04</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Insight & Training</span>
-              {/* Mobile chevron — hidden md+ via CSS */}
+              {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
                 <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -483,7 +483,7 @@ export default function Home() {
                     <path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Hands-on team training — SEO, paid, analytics, AI tooling.</p>
+                <p className="text-[13px] md:text-sm leading-relaxed mt-3 md:mt-4" style={{ color: 'var(--primary)', opacity: '0.62' }}>Hands-on team training, SEO, paid, analytics, AI tooling.</p>
               </a>
           </div>
         </div>
@@ -505,18 +505,18 @@ export default function Home() {
     {/* Asymmetric two-column grid */}
     <div className="grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-10 md:gap-16 lg:gap-24 md:items-start">
 
-      {/* LEFT — sticky editorial headline */}
+      {/* LEFT, sticky editorial headline */}
       <div className="md:sticky md:top-28 md:self-start">
         <h2 className="font-heading font-bold leading-[1.04] tracking-tight" style={{ color: 'var(--primary)', fontSize: 'clamp(2.5rem, 4vw, 3.75rem)' }}>
           Twenty<br />years.<br />Still not<br />average.
         </h2>
         <div className="mt-7 w-10 h-0.5" style={{ backgroundColor: 'var(--accent)' }}></div>
         <p className="mt-5 text-sm md:text-base leading-relaxed" style={{ color: 'var(--primary)', opacity: '0.55', maxWidth: '22ch' }}>
-          Built on what actually works — tested across industries, budgets, and every kind of impossible deadline.
+          Built on what actually works, tested across industries, budgets, and every kind of impossible deadline.
         </p>
       </div>
 
-      {/* RIGHT — value props */}
+      {/* RIGHT, value props */}
 
       {/* MOBILE: 2×2 compact grid */}
       <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:hidden">
@@ -589,7 +589,7 @@ export default function Home() {
                 <span className="text-xs font-mono" style={{ color: 'var(--primary)', opacity: '0.22', letterSpacing: '0.1em' }}>01</span>
               </div>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--primary)', opacity: '0.55' }}>
-                Your growth targets become ours. We're accountable to the same outcomes you are — not just the invoice cadence.
+                Your growth targets become ours. We're accountable to the same outcomes you are, not just the invoice cadence.
               </p>
             </div>
           </div>
@@ -611,7 +611,7 @@ export default function Home() {
                 <span className="text-xs font-mono" style={{ color: 'var(--primary)', opacity: '0.22', letterSpacing: '0.1em' }}>02</span>
               </div>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--primary)', opacity: '0.55' }}>
-                No hidden fees, no surprise markups, no agency theatre. You see the same numbers we see — always.
+                No hidden fees, no surprise markups, no agency theatre. You see the same numbers we see, always.
               </p>
             </div>
           </div>
@@ -634,7 +634,7 @@ export default function Home() {
                 <span className="text-xs font-mono" style={{ color: 'var(--primary)', opacity: '0.22', letterSpacing: '0.1em' }}>03</span>
               </div>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--primary)', opacity: '0.55' }}>
-                Deep SEO architecture, real attribution, performance creative — no gap between left-brain strategy and right-brain execution.
+                Deep SEO architecture, real attribution, performance creative, no gap between left-brain strategy and right-brain execution.
               </p>
             </div>
           </div>
@@ -766,11 +766,11 @@ export default function Home() {
       </a>
     </div>
 
-    {/* Cards — mobile: horizontal snap-scroll; desktop: asymmetric 3+2 grid */}
+    {/* Cards, mobile: horizontal snap-scroll; desktop: asymmetric 3+2 grid */}
     <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-6 -mx-4 px-4
                 md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-5 md:mx-0 md:px-0 md:overflow-visible md:pb-0 md:items-start">
 
-      {/* ① Featured post — spans 2 rows on desktop */}
+      {/* ① Featured post, spans 2 rows on desktop */}
       <article className="flex-shrink-0 snap-start w-[85vw] max-w-sm
                       md:w-auto md:max-w-none md:col-span-3 md:row-span-2 md:h-full
                       flex flex-col group cursor-pointer">
@@ -811,12 +811,12 @@ export default function Home() {
             Why Most SME Campaigns Fail Before They Even Launch
           </h3>
           <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--primary)', opacity: '0.52' }}>
-            The gap isn't budget — it's the absence of a single agreed-upon customer. We traced 40 campaigns back to exactly where the trouble started.
+            The gap isn't budget. It's the absence of a single agreed-upon customer. We traced 40 campaigns back to exactly where the trouble started.
           </p>
         </div>
       </article>
 
-      {/* ② Local SEO — top-right cell */}
+      {/* ② Local SEO, top-right cell */}
       <article className="flex-shrink-0 snap-start w-[85vw] max-w-sm
                       md:w-auto md:max-w-none md:col-span-2 md:col-start-4 md:row-start-1
                       flex flex-col gap-3 group cursor-pointer">
@@ -859,7 +859,7 @@ export default function Home() {
         </div>
       </article>
 
-      {/* ③ Non-Profit Ad Grants — bottom-right cell */}
+      {/* ③ Non-Profit Ad Grants, bottom-right cell */}
       <article className="flex-shrink-0 snap-start w-[85vw] max-w-sm
                       md:w-auto md:max-w-none md:col-span-2 md:col-start-4 md:row-start-2
                       flex flex-col gap-3 group cursor-pointer">
@@ -944,7 +944,7 @@ export default function Home() {
 
         {/* Body */}
         <p className="text-base md:text-lg leading-relaxed max-w-[440px]" style={{ color: 'rgba(250,250,248,0.48)' }}>
-          Twenty years of strategy, creative, and technical depth — paired with full transparency on every move. We treat your budget like our own, report back without hiding anything, and stick around until the work is actually done.
+          Twenty years of strategy, creative, and technical depth, paired with full transparency on every move. We treat your budget like our own, report back without hiding anything, and stick around until the work is actually done.
         </p>
 
         {/* Subtle proof line */}

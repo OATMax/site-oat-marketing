@@ -34,7 +34,7 @@ export type BlogPost = BlogCard & {
   tags?: string[];
 };
 
-/** Resilient fetch — returns a fallback instead of throwing so the build/render never breaks on a Sanity hiccup. */
+/** Resilient fetch, returns a fallback instead of throwing so the build/render never breaks on a Sanity hiccup. */
 async function safeFetch<T>(query: string, params: Record<string, unknown>, fallback: T): Promise<T> {
   try {
     return await sanityClient.fetch<T>(query, params, { next: { revalidate: 300 } });

@@ -43,7 +43,7 @@ export function Footer() {
                 <path d="M5.5 28.5 Q10 31 15 28.5 Q20 26 24.5 28.5" stroke="#C8922A" strokeWidth="0.85" opacity="0.55" />
               </svg>
               <div className="font-heading font-bold text-white text-2xl md:text-[26px] tracking-tight mb-2.5">OAT Marketing</div>
-              <p className="text-white/40 text-sm leading-[1.75]" style={{ maxWidth: "22rem" }}>Not your average agency. Twenty-plus years compounding growth — for start-ups, enterprises, and causes that deserve real partnership.</p>
+              <p className="text-white/40 text-sm leading-[1.75]" style={{ maxWidth: "22rem" }}>Not your average agency. Twenty-plus years compounding growth, for start-ups, enterprises, and causes that deserve real partnership.</p>
             </div>
             <div className="flex flex-col items-start md:items-end gap-5">
               <Link href="/contact" className="inline-flex items-center gap-2.5 text-white font-heading text-sm font-semibold px-5 py-3.5 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--accent)" }}>

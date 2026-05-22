@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/** Inner-page hero band — smaller sibling of the homepage hero, same design language. */
+/** Inner-page hero band, smaller sibling of the homepage hero, same design language. */
 export function PageHero({
   eyebrow,
   title,
@@ -34,10 +34,10 @@ export function PageHero({
   );
 }
 
-/** Reusable conversion band — mirrors the homepage cta-A beat. */
+/** Reusable conversion band, mirrors the homepage cta-A beat. */
 export function CtaBanner({
   heading = "Let's build something that compounds.",
-  body = "Tell us where you want to grow. We'll come back with a plan, not a pitch — and no obligation.",
+  body = "Tell us where you want to grow. We'll come back with a plan, not a pitch, and no obligation.",
   cta = "Get a free consultation",
 }: {
   heading?: string;

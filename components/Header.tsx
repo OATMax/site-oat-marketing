@@ -15,7 +15,7 @@ export function Header() {
         aria-label="Primary"
         className="mx-auto flex max-w-[1340px] items-center justify-between px-5 py-4 md:px-10"
       >
-        <Link href="/" className="flex items-center" aria-label="OAT Marketing — home">
+        <Link href="/" className="flex items-center" aria-label="OAT Marketing, home">
           <Image src="/brand/oat-logo.png" alt="OAT Marketing" width={104} height={40} priority className="h-8 w-auto md:h-9" />
         </Link>
 

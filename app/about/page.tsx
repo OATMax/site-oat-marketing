@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const PILLARS = [
   {
     title: "True partnership",
-    body: "We don't do vendor relationships. We win when you win — so we treat your budget, your brand, and your goals like our own. One team, aligned on outcomes.",
+    body: "We don't do vendor relationships. We win when you win, so we treat your budget, your brand, and your goals like our own. One team, aligned on outcomes.",
   },
   {
     title: "Full transparency",
@@ -36,7 +36,7 @@ export default function AboutPage() {
             average agency.
           </>
         }
-        intro="Twenty-plus years turning marketing budgets into compounding growth — for start-ups finding their footing, enterprises scaling share, and causes that deserve to be heard."
+        intro="Twenty-plus years turning marketing budgets into compounding growth, for start-ups finding their footing, enterprises scaling share, and causes that deserve to be heard."
       />
 
       {/* Editorial image band */}
@@ -50,7 +50,7 @@ export default function AboutPage() {
       <section className="bg-white px-6 py-16 md:px-10 md:py-28">
         <div className="mx-auto max-w-3xl space-y-6 text-base leading-[1.85] md:text-lg" style={{ color: "rgba(10,10,10,0.72)" }}>
           <p>
-            Most agencies sell you hours. We&apos;d rather sell you outcomes. That difference shapes everything — how we
+            Most agencies sell you hours. We&apos;d rather sell you outcomes. That difference shapes everything, how we
             scope work, how we report, and which channels we recommend when a cheaper or slower path serves you better.
           </p>
           <p>
@@ -59,7 +59,7 @@ export default function AboutPage() {
             business, not whatever we happen to specialise in.
           </p>
           <p>
-            We pair that experience with modern tooling that lets us compound work faster and deliver better — but the
+            We pair that experience with modern tooling that lets us compound work faster and deliver better, but the
             tooling is our advantage, not our product. What you buy is judgement, execution, and a partner who&apos;s
             genuinely invested in your numbers going up.
           </p>

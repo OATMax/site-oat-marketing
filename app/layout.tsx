@@ -13,7 +13,7 @@ const SITE_URL = "https://oatmarketing.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "OAT Marketing — Not Your Average Agency",
+    default: "OAT Marketing: Not Your Average Agency",
     template: "%s | OAT Marketing",
   },
   description:
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "OAT Marketing — Not Your Average Agency",
+    title: "OAT Marketing: Not Your Average Agency",
     description:
       "Full-service digital marketing built on true partnership, full transparency, and 20+ years of results.",
     siteName: "OAT Marketing",
   },
   twitter: {
     card: "summary_large_image",
-    title: "OAT Marketing — Not Your Average Agency",
+    title: "OAT Marketing: Not Your Average Agency",
     description:
       "Full-service digital marketing built on true partnership, full transparency, and 20+ years of results.",
   },

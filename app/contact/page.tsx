@@ -4,7 +4,7 @@ import { SERVICES } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Start a conversation with OAT Marketing. Tell us where you want to grow and we'll come back with a plan — free, and no obligation.",
+    "Start a conversation with OAT Marketing. Tell us where you want to grow and we'll come back with a plan, free, and no obligation.",
   alternates: { canonical: "/contact" },
 };
 
@@ -40,7 +40,7 @@ export default function ContactPage() {
               Let&apos;s start a conversation.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed" style={{ color: "rgba(10,10,10,0.6)" }}>
-              Tell us where you want to grow. We&apos;ll come back with a plan, not a pitch — and there&apos;s no
+              Tell us where you want to grow. We&apos;ll come back with a plan, not a pitch, and there&apos;s no
               obligation. You&apos;ll hear from a real person within one business day.
             </p>
 
