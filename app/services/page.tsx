@@ -30,7 +30,7 @@ export default function ServicesIndexPage() {
               <div key={category}>
                 <div className="mb-8 flex items-baseline gap-4 border-b border-black/[0.07] pb-4">
                   <h2 className="font-heading text-xl font-bold tracking-tight text-[var(--primary)]">{category}</h2>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--accent)]">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--accent)]">
                     {items.length} services
                   </span>
                 </div>

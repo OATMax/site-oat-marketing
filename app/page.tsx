@@ -65,14 +65,14 @@ export default function Home() {
     {/* Section header: left-anchored heading + right body copy */}
     <div className="mb-12 md:mb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-5 md:gap-16">
       <div>
-        <p className="font-mono text-[10px] tracking-[0.25em] uppercase text-[var(--accent)] mb-4 md:mb-6">
+        <p className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--accent)] mb-4 md:mb-6">
           Who we work with
         </p>
         <h2 className="font-heading font-bold text-[var(--primary)] leading-[0.92] tracking-tight text-[2.5rem] md:text-5xl lg:text-[4rem]">
           Three playbooks.<br />One agency.
         </h2>
       </div>
-      <p className="max-w-[28ch] text-sm leading-relaxed md:text-right md:pb-1 md:flex-shrink-0" style={{ color: 'rgba(10,10,10,0.5)' }}>
+      <p className="max-w-[28ch] text-sm leading-relaxed md:text-right md:pb-1 md:flex-shrink-0" style={{ color: 'rgba(10,10,10,0.64)' }}>
         Twenty years across start-ups, established operators,
         and mission-driven organisations. Pick the brief that fits.
       </p>
@@ -105,7 +105,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-2.5">
-          <p className="font-mono text-[9px] tracking-[0.22em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>
+          <p className="font-mono text-[11px] tracking-[0.22em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>
             01 · For founders
           </p>
           <h3 className="font-heading text-[1.625rem] md:text-[1.875rem] font-bold text-[var(--secondary)] leading-tight">
@@ -152,13 +152,13 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-2.5">
-          <p className="font-mono text-[9px] tracking-[0.22em] uppercase" style={{ color: 'rgba(10,10,10,0.25)' }}>
+          <p className="font-mono text-[11px] tracking-[0.22em] uppercase" style={{ color: 'rgba(10,10,10,0.25)' }}>
             02 · For operators
           </p>
           <h3 className="font-heading text-[1.625rem] md:text-[1.875rem] font-bold text-[var(--primary)] leading-tight">
             SMEs
           </h3>
-          <p className="text-sm leading-relaxed" style={{ color: 'rgba(10,10,10,0.55)' }}>
+          <p className="text-sm leading-relaxed" style={{ color: 'rgba(10,10,10,0.66)' }}>
             Compound what works. Cut what doesn't.
           </p>
         </div>
@@ -202,13 +202,13 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col gap-2.5">
-          <p className="font-mono text-[9px] tracking-[0.22em] uppercase" style={{ color: 'rgba(10,10,10,0.25)' }}>
+          <p className="font-mono text-[11px] tracking-[0.22em] uppercase" style={{ color: 'rgba(10,10,10,0.25)' }}>
             03 · For missions
           </p>
           <h3 className="font-heading text-[1.625rem] md:text-[1.875rem] font-bold text-[var(--primary)] leading-tight">
             Not-For-Profits
           </h3>
-          <p className="text-sm leading-relaxed" style={{ color: 'rgba(10,10,10,0.55)' }}>
+          <p className="text-sm leading-relaxed" style={{ color: 'rgba(10,10,10,0.66)' }}>
             Reach more people. Spend less doing it.
           </p>
         </div>
@@ -244,7 +244,7 @@ export default function Home() {
     <header className="mb-12 md:mb-20 lg:mb-28">
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 md:gap-8">
         <div>
-          <span className="block text-[9px] tracking-[0.42em] uppercase mb-4 md:mb-5" style={{ color: 'var(--accent)', fontFamily: '\'Geist Mono\',monospace', letterSpacing: '.42em' }}>Our Services · 10 disciplines, 4 categories</span>
+          <span className="block text-[11px] tracking-[0.42em] uppercase mb-4 md:mb-5" style={{ color: 'var(--accent)', fontFamily: '\'Geist Mono\',monospace', letterSpacing: '.42em' }}>Our Services · 10 disciplines, 4 categories</span>
           <h2 className="font-heading text-4xl md:text-6xl lg:text-[5rem] font-bold tracking-tight leading-[0.95]" style={{ color: 'var(--primary)' }}>
             Full-service.<br />No filler.
           </h2>
@@ -272,7 +272,7 @@ export default function Home() {
         <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
-              <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>01</span>
+              <span className="text-[11px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>01</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Search & Paid</span>
               {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
@@ -328,7 +328,7 @@ export default function Home() {
         <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
-              <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>02</span>
+              <span className="text-[11px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>02</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Outreach</span>
               {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
@@ -366,7 +366,7 @@ export default function Home() {
         <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
-              <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>03</span>
+              <span className="text-[11px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>03</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Brand</span>
               {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>
@@ -404,7 +404,7 @@ export default function Home() {
         <summary className="grid grid-cols-1 gap-3 lg:gap-12 py-4 md:py-0 border-b md:border-b-0 border-black/10">
           <div className="flex flex-row lg:flex-col items-baseline lg:items-start gap-3 lg:gap-2 lg:pt-1.5">
             <div className="flex items-center gap-3 w-full lg:w-auto">
-              <span className="text-[10px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>04</span>
+              <span className="text-[11px] tracking-[0.48em] uppercase shrink-0" style={{ fontFamily: '\'Geist Mono\',monospace', color: 'var(--accent)' }}>04</span>
               <span className="text-xs md:text-[11px] font-semibold tracking-[0.18em] md:tracking-[0.22em] uppercase flex-1" style={{ color: 'var(--primary)', opacity: '0.5' }}>Insight & Training</span>
               {/* Mobile chevron, hidden md+ via CSS */}
               <svg className="cat-chev w-5 h-5 md:hidden shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" style={{ color: 'var(--primary)', opacity: '0.45' }}>

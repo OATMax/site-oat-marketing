@@ -20,12 +20,12 @@ export function PageHero({
         ></div>
       </div>
       <div className="relative z-10 mx-auto max-w-3xl text-center">
-        <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">{eyebrow}</p>
+        <p className="mb-5 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">{eyebrow}</p>
         <h1 className="font-heading text-[2.5rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-6xl">
           {title}
         </h1>
         {intro ? (
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed md:text-lg" style={{ color: "rgba(10,10,10,0.55)" }}>
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed md:text-lg" style={{ color: "rgba(10,10,10,0.66)" }}>
             {intro}
           </p>
         ) : null}
@@ -80,7 +80,7 @@ export function SectionHeader({
 }) {
   return (
     <div className={`mb-12 md:mb-16 ${className}`}>
-      <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)] md:mb-6">{eyebrow}</p>
+      <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)] md:mb-6">{eyebrow}</p>
       <h2 className="font-heading text-[2rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-5xl">
         {title}
       </h2>

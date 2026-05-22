@@ -73,7 +73,7 @@ const ptComponents: PortableTextComponents = {
           <div className="relative aspect-[16/9] w-full overflow-hidden bg-[var(--neutral-50)]">
             <Image src={urlFor(value).width(1200).url()} alt={v.alt || ""} fill sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
           </div>
-          {v.caption ? <figcaption className="mt-2 text-center text-sm" style={{ color: "rgba(10,10,10,0.5)" }}>{v.caption}</figcaption> : null}
+          {v.caption ? <figcaption className="mt-2 text-center text-sm" style={{ color: "rgba(10,10,10,0.64)" }}>{v.caption}</figcaption> : null}
         </figure>
       );
     },
@@ -114,10 +114,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <article className="bg-white px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-3xl">
-          <nav aria-label="Breadcrumb" className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>
+          <nav aria-label="Breadcrumb" className="mb-6 font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>
             <Link href="/blog" className="hover:text-[var(--accent)]">Blog</Link>
           </nav>
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--accent)" }}>{formatDate(post.publishedAt)}{post.author ? ` · ${post.author}` : ""}</p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "var(--accent)" }}>{formatDate(post.publishedAt)}{post.author ? ` · ${post.author}` : ""}</p>
           <h1 className="mt-3 font-heading text-[2.25rem] font-bold leading-[1.05] tracking-tight text-[var(--primary)] md:text-5xl">{post.title}</h1>
           <p className="mt-5 text-lg leading-relaxed" style={{ color: "rgba(10,10,10,0.6)" }}>{post.excerpt}</p>
 

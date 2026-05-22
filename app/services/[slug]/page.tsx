@@ -56,7 +56,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         <Image src={`/images/svc-${svc.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-90" style={{ objectPosition: "center right" }} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: "linear-gradient(90deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.7) 55%, rgba(250,250,248,0.5) 100%)" }}></div>
         <div className="relative z-10 mx-auto max-w-3xl">
-          <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--accent)" }}>{svc.category}</p>
+          <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "var(--accent)" }}>{svc.category}</p>
           <h1 className="font-heading text-[2.5rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-6xl">{svc.name}</h1>
           <p className="mt-4 font-heading text-lg font-semibold md:text-xl" style={{ color: "var(--accent)" }}>{svc.tagline}</p>
           <p className="mt-6 max-w-2xl text-base leading-relaxed md:text-lg" style={{ color: "rgba(10,10,10,0.6)" }}>{svc.intro}</p>
@@ -67,7 +67,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       <section className="bg-white px-6 py-16 md:px-10 md:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">What the engagement looks like</p>
+            <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">What the engagement looks like</p>
             <ul className="space-y-5">
               {svc.whatWeDo.map((item) => (
                 <li key={item} className="flex gap-3.5">
@@ -78,7 +78,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             </ul>
           </div>
           <div className="bg-[var(--neutral-50)] p-8 md:p-10">
-            <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">What you receive</p>
+            <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">What you receive</p>
             <ul className="space-y-4">
               {svc.deliverables.map((item) => (
                 <li key={item} className="border-b border-black/[0.06] pb-4 text-[15px] leading-relaxed last:border-0 last:pb-0" style={{ color: "rgba(10,10,10,0.72)" }}>
@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               ))}
             </ul>
             <div className="mt-8 border-t border-black/[0.08] pt-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>The outcome</p>
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>The outcome</p>
               <p className="mt-2 font-heading text-base font-semibold leading-snug text-[var(--primary)]">{svc.outcome}</p>
             </div>
           </div>

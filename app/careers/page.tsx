@@ -44,7 +44,7 @@ export default function CareersPage() {
       {/* Open roles */}
       <section className="bg-[var(--neutral-50)] px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">Open roles</p>
+          <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">Open roles</p>
           <h2 className="font-heading text-2xl font-bold tracking-tight text-[var(--primary)] md:text-3xl">No open roles right now, but we&apos;re always listening.</h2>
           <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed" style={{ color: "rgba(10,10,10,0.6)" }}>
             We hire ahead of need when we meet the right person. If you&apos;re a marketer, strategist, designer, or

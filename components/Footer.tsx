@@ -65,9 +65,9 @@ export function Footer() {
           {/* Nav columns */}
           <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10 lg:gap-14 py-10 md:py-16">
             <div className="oat-fc border-b border-white/[0.06] md:border-b-0">
-              <details>
+              <details open>
                 <summary className="flex items-center justify-between py-4 md:pb-6 md:pt-0 select-none cursor-pointer">
-                  <span className="font-heading text-[10px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Services</span>
+                  <span className="font-heading text-[11px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Services</span>
                   <svg className="oat-chev w-4 h-4 text-white/30" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </summary>
                 <ul className="pb-6 md:pb-0 space-y-[11px]">
@@ -79,9 +79,9 @@ export function Footer() {
             </div>
 
             <div className="oat-fc border-b border-white/[0.06] md:border-b-0">
-              <details>
+              <details open>
                 <summary className="flex items-center justify-between py-4 md:pb-6 md:pt-0 select-none cursor-pointer">
-                  <span className="font-heading text-[10px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Who We Work With</span>
+                  <span className="font-heading text-[11px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Who We Work With</span>
                   <svg className="oat-chev w-4 h-4 text-white/30" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </summary>
                 <ul className="pb-6 md:pb-0 space-y-[11px]">
@@ -93,9 +93,9 @@ export function Footer() {
             </div>
 
             <div className="oat-fc border-b border-white/[0.06] md:border-b-0">
-              <details>
+              <details open>
                 <summary className="flex items-center justify-between py-4 md:pb-6 md:pt-0 select-none cursor-pointer">
-                  <span className="font-heading text-[10px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Company</span>
+                  <span className="font-heading text-[11px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Company</span>
                   <svg className="oat-chev w-4 h-4 text-white/30" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </summary>
                 <ul className="pb-6 md:pb-0 space-y-[11px]">
@@ -107,9 +107,9 @@ export function Footer() {
             </div>
 
             <div className="oat-fc">
-              <details>
+              <details open>
                 <summary className="flex items-center justify-between py-4 md:pb-6 md:pt-0 select-none cursor-pointer">
-                  <span className="font-heading text-[10px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Get In Touch</span>
+                  <span className="font-heading text-[11px] uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Get In Touch</span>
                   <svg className="oat-chev w-4 h-4 text-white/30" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </summary>
                 <div className="pb-6 md:pb-0 space-y-3.5">

@@ -72,7 +72,7 @@ export default function AboutPage() {
       <section className="bg-[var(--neutral-50)] px-6 py-16 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center md:mb-16">
-            <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">What sets us apart</p>
+            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">What sets us apart</p>
             <h2 className="font-heading text-[2rem] font-bold leading-tight tracking-tight text-[var(--primary)] md:text-5xl">
               Three things we won&apos;t compromise.
             </h2>

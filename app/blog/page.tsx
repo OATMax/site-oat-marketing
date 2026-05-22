@@ -64,7 +64,7 @@ export default async function BlogIndexPage() {
                       <div aria-hidden="true" className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 30% 20%, rgba(200,146,42,0.18) 0%, transparent 70%)" }} />
                     )}
                   </div>
-                  <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>{formatDate(post.publishedAt)}</p>
+                  <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>{formatDate(post.publishedAt)}</p>
                   <h2 className="mt-2 font-heading text-xl font-bold leading-snug text-[var(--primary)] group-hover:text-[var(--accent)]">{post.title}</h2>
                   <p className="mt-2 flex-1 text-sm leading-relaxed" style={{ color: "rgba(10,10,10,0.6)" }}>{post.excerpt}</p>
                 </Link>

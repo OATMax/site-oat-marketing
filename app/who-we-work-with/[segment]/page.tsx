@@ -37,7 +37,7 @@ export default async function SegmentPage({ params }: { params: Promise<{ segmen
         <Image src={`/images/seg-${seg.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-90" style={{ objectPosition: "center right" }} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: "linear-gradient(90deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.7) 55%, rgba(250,250,248,0.5) 100%)" }}></div>
         <div className="relative z-10 mx-auto max-w-3xl">
-          <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: "var(--accent)" }}>
+          <p className="mb-5 font-mono text-[11px] uppercase tracking-[0.22em]" style={{ color: "var(--accent)" }}>
             {seg.number} · {seg.audience}
           </p>
           <h1 className="font-heading text-[2.5rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-6xl">{seg.name}</h1>
@@ -49,7 +49,7 @@ export default async function SegmentPage({ params }: { params: Promise<{ segmen
       {/* Challenges */}
       <section className="bg-white px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <p className="mb-8 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">What we hear most</p>
+          <p className="mb-8 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">What we hear most</p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {seg.challenges.map((c) => (
               <div key={c} className="flex gap-3.5 border border-black/[0.07] bg-[var(--neutral-50)] p-6">
@@ -80,7 +80,7 @@ export default async function SegmentPage({ params }: { params: Promise<{ segmen
       {/* Recommended services */}
       <section className="bg-white px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <p className="mb-8 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">Where we usually start</p>
+          <p className="mb-8 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">Where we usually start</p>
           <div className="flex flex-wrap gap-3">
             {services.map((s) => (
               <Link key={s!.slug} href={`/services/${s!.slug}`} className="svc-tile inline-flex items-center gap-2 border border-black/[0.1] px-5 py-3 font-heading text-sm font-semibold text-[var(--primary)] no-underline">

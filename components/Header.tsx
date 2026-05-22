@@ -51,7 +51,7 @@ export function Header() {
                       className="rounded-lg p-3 transition-colors hover:bg-[var(--neutral-50)]"
                     >
                       <div className="font-heading text-sm font-semibold text-[var(--primary)]">{s.name}</div>
-                      <div className="mt-0.5 text-[12px] leading-snug" style={{ color: "rgba(10,10,10,0.5)" }}>{s.tagline}</div>
+                      <div className="mt-0.5 text-[12px] leading-snug" style={{ color: "rgba(10,10,10,0.64)" }}>{s.tagline}</div>
                     </Link>
                   ))}
                 </div>

@@ -44,7 +44,7 @@ export default function PrivacyPage() {
               <p className="text-[16px] leading-[1.8]" style={{ color: "rgba(10,10,10,0.72)" }}>{s.p}</p>
             </div>
           ))}
-          <p className="border-t border-black/[0.08] pt-8 text-sm" style={{ color: "rgba(10,10,10,0.5)" }}>
+          <p className="border-t border-black/[0.08] pt-8 text-sm" style={{ color: "rgba(10,10,10,0.64)" }}>
             Questions about this policy? Email <a href="mailto:hello@oatmarketing.com" className="font-medium text-[var(--primary)] underline decoration-[var(--accent)] underline-offset-2">hello@oatmarketing.com</a>.
           </p>
         </div>

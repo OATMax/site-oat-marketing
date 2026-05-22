@@ -38,7 +38,7 @@ export default function ContactPage() {
         <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
           {/* Left: pitch + details */}
           <div>
-            <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--accent)]">Get in touch</p>
+            <p className="mb-5 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--accent)]">Get in touch</p>
             <h1 className="font-heading text-[2.5rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-5xl">
               Let&apos;s start a conversation.
             </h1>
@@ -49,13 +49,13 @@ export default function ContactPage() {
 
             <div className="mt-10 space-y-6">
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>Email</p>
+                <p className="font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>Email</p>
                 <a href="mailto:hello@oatmarketing.com" className="mt-1 inline-block font-heading text-lg font-semibold text-[var(--primary)] hover:text-[var(--accent)]">
                   hello@oatmarketing.com
                 </a>
               </div>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>Where we are</p>
+                <p className="font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>Where we are</p>
                 <p className="mt-1 text-[15px]" style={{ color: "rgba(10,10,10,0.72)" }}>Fully remote, spanning time zones.</p>
               </div>
             </div>
