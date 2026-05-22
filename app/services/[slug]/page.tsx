@@ -53,7 +53,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-[var(--neutral-50)] px-6 py-20 md:px-10 md:py-32">
-        <Image src={`/images/svc-${svc.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-50" style={{ objectPosition: "center right" }} />
+        <Image src={`/images/svc-${svc.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-90" style={{ objectPosition: "center right" }} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: "linear-gradient(90deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.7) 55%, rgba(250,250,248,0.5) 100%)" }}></div>
         <div className="relative z-10 mx-auto max-w-3xl">
           <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--accent)" }}>{svc.category}</p>

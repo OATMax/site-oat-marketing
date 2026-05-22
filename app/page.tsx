@@ -10,95 +10,52 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-{/* hero (hero-A) */}
-<section id="hero" className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden bg-[var(--neutral-50)] px-5 py-16 md:py-28">
-
-  {/* Generated hero visual, softly faded so the centered headline stays legible */}
-  <Image src="/images/hero.png" alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-[0.55]" style={{ objectPosition: 'center right' }} />
-  <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: 'radial-gradient(ellipse at 50% 45%, rgba(250,250,248,0.86) 28%, rgba(250,250,248,0.45) 66%, rgba(250,250,248,0.78) 100%)' }}></div>
-
-  {/* Amber radial bloom, top center */}
+{/* hero */}
+<section id="hero" className="relative overflow-hidden bg-[var(--neutral-50)] px-5 py-16 md:py-24">
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 flex justify-center">
-    <div className="h-[55vh] w-[90vw] max-w-3xl translate-y-[-40%] rounded-full opacity-[0.13]" style={{ background: 'radial-gradient(ellipse at 50% 0%, #C8922A 0%, transparent 68%)' }}></div>
+    <div className="h-[60vh] w-[90vw] max-w-4xl translate-y-[-25%] rounded-full opacity-[0.18]" style={{ background: 'radial-gradient(ellipse at 50% 0%, #C8922A 0%, transparent 64%)' }}></div>
   </div>
 
-  {/* Grain noise overlay */}
-  <svg aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 h-full w-full opacity-[0.038]" xmlns="http://www.w3.org/2000/svg">
-    <filter id="hero-noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" />
-      <feColorMatrix type="saturate" values="0" />
-    </filter>
-    <rect width="100%" height="100%" filter="url(#hero-noise)" />
-  </svg>
+  <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-1 md:px-6 lg:grid-cols-2 lg:gap-16">
+    <div className="text-center lg:text-left">
+      <p className="mb-6 inline-flex items-center gap-3 text-[0.68rem] font-semibold uppercase tracking-[0.25em] text-[var(--accent)] md:text-xs">
+        <span className="h-px w-6" style={{ backgroundColor: 'var(--accent)' }}></span>
+        Not Your Average Agency
+      </p>
+      <h1 className="font-heading text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.95] tracking-[-0.03em] text-[var(--primary)]">
+        Twenty years of marketing that{' '}
+        <span className="relative inline-block">compounds.
+          <svg aria-hidden="true" className="absolute -bottom-[0.1em] left-0 w-full" height="12" viewBox="0 0 420 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8 C52 2, 105 11, 160 7 C215 3, 268 10, 320 6.5 C355 4, 390 9, 418 6" stroke="#C8922A" strokeWidth="3" strokeLinecap="round" fill="none" /></svg>
+        </span>
+      </h1>
+      <p className="mx-auto mt-6 max-w-[520px] text-[1rem] leading-[1.7] md:text-[1.075rem] lg:mx-0" style={{ color: 'rgba(10,10,10,0.6)' }}>
+        True partnerships, not vendor contracts. Full transparency, no hidden fees, and strategy built to build on itself. For start-ups, businesses, and nonprofits.
+      </p>
+      <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:items-start lg:justify-start">
+        <a href="/contact" className="group inline-flex items-center gap-2.5 rounded-full bg-[var(--primary)] px-8 py-4 text-[0.95rem] font-medium text-[var(--neutral-50)] shadow-md shadow-black/10 transition-all duration-200 hover:bg-[#1a1a1a] hover:shadow-lg">
+          Start a conversation
+          <svg aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        </a>
+        <a href="/services" className="inline-flex items-center rounded-full border border-black/15 px-7 py-4 text-[0.95rem] font-medium text-[var(--primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]">
+          See what we do
+        </a>
+      </div>
+      <div className="mt-10 flex items-center justify-center gap-7 lg:justify-start">
+        <div><div className="font-heading text-2xl font-bold text-[var(--primary)]">20+</div><div className="text-[11px] uppercase tracking-[0.15em]" style={{ color: 'rgba(10,10,10,0.45)' }}>Years</div></div>
+        <div className="h-8 w-px bg-black/10"></div>
+        <div><div className="font-heading text-2xl font-bold text-[var(--primary)]">10</div><div className="text-[11px] uppercase tracking-[0.15em]" style={{ color: 'rgba(10,10,10,0.45)' }}>Services</div></div>
+        <div className="h-8 w-px bg-black/10"></div>
+        <div><div className="font-heading text-2xl font-bold text-[var(--primary)]">3</div><div className="text-[11px] uppercase tracking-[0.15em]" style={{ color: 'rgba(10,10,10,0.45)' }}>Audiences</div></div>
+      </div>
+    </div>
 
-  {/* Abstract crosshair / targeting mark, editorial right-float */}
-  <svg aria-hidden="true" className="pointer-events-none absolute right-[-8%] top-[12%] z-0 h-[220px] w-[220px] opacity-[0.05] md:h-[440px] md:w-[440px] md:right-[1%] md:top-[8%] md:opacity-[0.07]" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="220" cy="220" r="210" stroke="#0A0A0A" strokeWidth="0.75" />
-    <circle cx="220" cy="220" r="135" stroke="#0A0A0A" strokeWidth="0.5" strokeDasharray="3 9" />
-    <line x1="220" y1="0" x2="220" y2="440" stroke="#0A0A0A" strokeWidth="0.5" />
-    <line x1="0" y1="220" x2="440" y2="220" stroke="#0A0A0A" strokeWidth="0.5" />
-    <circle cx="220" cy="220" r="5" fill="#C8922A" opacity="0.9" />
-    <circle cx="220" cy="220" r="2" fill="#C8922A" />
-  </svg>
-
-  {/* Mirror mark, editorial left-float, smaller */}
-  <svg aria-hidden="true" className="pointer-events-none absolute left-[-10%] bottom-[14%] z-0 h-[140px] w-[140px] opacity-[0.04] md:h-[260px] md:w-[260px] md:left-[0%] md:opacity-[0.05]" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="130" cy="130" r="124" stroke="#0A0A0A" strokeWidth="0.75" />
-    <circle cx="130" cy="130" r="80" stroke="#C8922A" strokeWidth="0.5" strokeDasharray="2 6" />
-  </svg>
-
-  {/* ─── CONTENT ─── */}
-  <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
-
-    {/* Eyebrow */}
-    <p className="mb-9 flex items-center justify-center gap-3 text-[0.68rem] font-semibold uppercase tracking-[0.25em] text-[var(--accent)] md:mb-11 md:text-xs">
-      <svg width="22" height="1" viewBox="0 0 22 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="0" y1="0.5" x2="22" y2="0.5" stroke="#C8922A" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-      Not Your Average Agency
-      <svg width="22" height="1" viewBox="0 0 22 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="0" y1="0.5" x2="22" y2="0.5" stroke="#C8922A" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    </p>
-
-    {/* H1 */}
-    <h1 className="font-heading mb-7 text-[clamp(2.6rem,7.5vw,6.75rem)] font-bold leading-[0.91] tracking-[-0.03em] text-[var(--primary)] md:mb-9">
-      Twenty years of<br />
-      marketing that<br />
-      <span className="relative inline-block">
-        compounds.
-        {/* Wavy amber underline */}
-        <svg aria-hidden="true" className="absolute -bottom-[0.12em] left-0 w-full" height="12" viewBox="0 0 420 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 8 C52 2, 105 11, 160 7 C215 3, 268 10, 320 6.5 C355 4, 390 9, 418 6" stroke="#C8922A" strokeWidth="2.75" strokeLinecap="round" fill="none" />
-        </svg>
-      </span>
-    </h1>
-
-    {/* Subhead */}
-    <p className="mx-auto mb-11 max-w-[500px] text-[0.95rem] leading-[1.7] text-[var(--primary)] opacity-50 md:mb-13 md:max-w-[540px] md:text-[1.05rem]">
-      True partnerships, not vendor contracts. Full transparency, no hidden fees, and strategy built to build on itself. For start-ups, businesses, and nonprofits.
-    </p>
-
-    {/* Primary CTA, single, high-conviction */}
-    <a href="/contact" className="group inline-flex items-center gap-2.5 rounded-full bg-[var(--primary)] px-7 py-3.5 text-sm font-medium tracking-wide text-[var(--neutral-50)] shadow-md shadow-black/10 transition-all duration-200 hover:bg-[#1a1a1a] hover:shadow-lg hover:shadow-black/15 md:px-8 md:py-4 md:text-[0.95rem]">
-      Start a conversation
-      <svg aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    </a>
-
+    <div className="relative">
+      <div className="absolute -right-3 -top-3 hidden h-full w-full rounded-3xl lg:block" style={{ backgroundColor: 'var(--accent)', opacity: 0.12 }} aria-hidden="true"></div>
+      <div className="relative aspect-[3/2] w-full overflow-hidden rounded-3xl shadow-2xl shadow-black/20 sm:aspect-[16/10] lg:aspect-[4/5]">
+        <Image src="/images/hero-people.png" alt="The OAT Marketing team collaborating" fill priority sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+      </div>
+    </div>
   </div>
-
-  {/* Scroll cue, desktop only */}
-  <div aria-hidden="true" className="absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
-    <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-[var(--primary)] opacity-25">Scroll</span>
-    <svg width="1" height="28" viewBox="0 0 1 28" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0.5" y1="0" x2="0.5" y2="28" stroke="#0A0A0A" strokeWidth="1" strokeOpacity="0.18" />
-    </svg>
-    {/* Animated dot */}
-    <span className="h-1 w-1 animate-bounce rounded-full bg-[var(--primary)] opacity-20"></span>
-  </div>
-
 </section>
 
 {/* segments (segments) */}
