@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/ui";
 import { SERVICES, getService } from "@/lib/services";
+
+const CAT_IMG: Record<string, string> = {
+  Acquisition: "/images/cat-acquisition.png",
+  Creative: "/images/cat-creative.png",
+  Strategy: "/images/cat-strategy.png",
+};
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -50,9 +57,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-[var(--neutral-50)] px-6 py-20 md:px-10 md:py-32">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 flex justify-center">
-          <div className="h-[40vh] w-[90vw] max-w-3xl translate-y-[-30%] rounded-full opacity-[0.12]" style={{ background: "radial-gradient(ellipse at 50% 0%, #C8922A 0%, transparent 68%)" }}></div>
-        </div>
+        <Image src={CAT_IMG[svc.category]} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-50" style={{ objectPosition: "center right" }} />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: "linear-gradient(90deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.7) 55%, rgba(250,250,248,0.5) 100%)" }}></div>
         <div className="relative z-10 mx-auto max-w-3xl">
           <nav aria-label="Breadcrumb" className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>
             <Link href="/services" className="hover:text-[var(--accent)]">Services</Link>

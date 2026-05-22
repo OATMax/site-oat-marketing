@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero, CtaBanner } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -37,6 +38,13 @@ export default function AboutPage() {
         }
         intro="Twenty-plus years turning marketing budgets into compounding growth — for start-ups finding their footing, enterprises scaling share, and causes that deserve to be heard."
       />
+
+      {/* Editorial image band */}
+      <div className="mx-auto -mt-4 max-w-6xl px-6 md:px-10">
+        <div className="relative aspect-[21/9] w-full overflow-hidden">
+          <Image src="/images/about.png" alt="Calm, light-filled minimal interior" fill sizes="(max-width: 768px) 100vw, 1152px" className="object-cover" />
+        </div>
+      </div>
 
       {/* Story */}
       <section className="bg-white px-6 py-16 md:px-10 md:py-28">

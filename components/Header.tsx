@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV = [
   { href: "/services", label: "Services" },
@@ -14,8 +15,8 @@ export function Header() {
         aria-label="Primary"
         className="mx-auto flex max-w-[1340px] items-center justify-between px-5 py-4 md:px-10"
       >
-        <Link href="/" className="font-heading text-lg font-bold tracking-tight" style={{ color: "var(--primary)" }}>
-          OAT<span style={{ color: "var(--accent)" }}>.</span>
+        <Link href="/" className="flex items-center" aria-label="OAT Marketing — home">
+          <Image src="/brand/oat-logo.png" alt="OAT Marketing" width={104} height={40} priority className="h-8 w-auto md:h-9" />
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">

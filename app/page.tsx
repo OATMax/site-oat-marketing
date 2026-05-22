@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "OAT Marketing — Not Your Average Agency",
   description:
@@ -10,6 +12,10 @@ export default function Home() {
     <>
 {/* hero (hero-A) */}
 <section id="hero" className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden bg-[var(--neutral-50)] px-5 py-16 md:py-28">
+
+  {/* Generated hero visual — softly faded so the centered headline stays legible */}
+  <Image src="/images/hero.png" alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-[0.55]" style={{ objectPosition: 'center right' }} />
+  <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: 'radial-gradient(ellipse at 50% 45%, rgba(250,250,248,0.86) 28%, rgba(250,250,248,0.45) 66%, rgba(250,250,248,0.78) 100%)' }}></div>
 
   {/* Amber radial bloom — top center */}
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 flex justify-center">
