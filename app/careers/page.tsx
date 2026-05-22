@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero, CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -18,6 +19,7 @@ const VALUES = [
 export default function CareersPage() {
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Careers", href: "/careers" }]} />
       <PageHero
         eyebrow="Careers"
         title={<>Do the best work of your career.</>}

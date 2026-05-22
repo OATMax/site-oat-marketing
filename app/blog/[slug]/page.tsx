@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import { CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { getPost, getPostSlugs, urlFor } from "@/lib/sanity.client";
 
 export const revalidate = 300;
@@ -108,6 +109,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       {faqLd ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqLd }} /> : null}
+
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Blog", href: "/blog" }, { name: post.title, href: `/blog/${post.slug}` }]} />
 
       <article className="bg-white px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-3xl">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { PageHero, CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SERVICES, SERVICE_CATEGORIES } from "@/lib/services";
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function ServicesIndexPage() {
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }]} />
       <PageHero
         eyebrow="Services"
         title={<>Everything you need, under one roof.</>}

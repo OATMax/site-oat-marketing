@@ -38,17 +38,46 @@ export const metadata: Metadata = {
 
 const orgJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ProfessionalService",
+  "@id": `${SITE_URL}/#organization`,
   name: "OAT Marketing",
   url: SITE_URL,
+  logo: `${SITE_URL}/brand/oat-logo.png`,
+  image: `${SITE_URL}/brand/oat-logo.png`,
   description:
-    "Full-service digital marketing agency serving start-ups, SMEs, and non-profits.",
-  sameAs: [],
+    "Full-service digital marketing agency with 20+ years of experience, serving start-ups, SMEs, and non-profits through SEO, paid ads, social, email, websites, and more.",
+  slogan: "Not your average agency.",
+  email: "hello@oatmarketing.com",
+  areaServed: "US",
+  knowsAbout: [
+    "Search Engine Optimization",
+    "Local SEO",
+    "Paid Advertising",
+    "Google Ad Grant",
+    "Social Media Marketing",
+    "Email Marketing",
+    "Web Design",
+    "Graphic Design",
+    "Market Research",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Sales",
+    email: "hello@oatmarketing.com",
+    availableLanguage: "English",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/oat-marketing",
+    "https://www.instagram.com/oatmarketing",
+    "https://x.com/oatmarketing",
+    "https://www.facebook.com/oatmarketing",
+  ],
 };
 
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
   name: "OAT Marketing",
   url: SITE_URL,
 };

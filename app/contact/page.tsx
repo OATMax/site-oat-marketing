@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SERVICES } from "@/lib/services";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -26,6 +27,8 @@ export default function ContactPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }} />
+
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Contact", href: "/contact" }]} />
 
       <section className="relative overflow-hidden bg-[var(--neutral-50)] px-6 py-20 md:px-10 md:py-28">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 flex justify-center">

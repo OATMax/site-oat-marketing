@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { PageHero, CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { getPublishedPosts, urlFor } from "@/lib/sanity.client";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default async function BlogIndexPage() {
 
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Blog", href: "/blog" }]} />
       <PageHero
         eyebrow="Blog"
         title={<>Marketing worth reading.</>}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SEGMENTS, getSegment } from "@/lib/segments";
 import { getService } from "@/lib/services";
 
@@ -30,6 +31,7 @@ export default async function SegmentPage({ params }: { params: Promise<{ segmen
 
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: seg.name, href: `/who-we-work-with/${seg.slug}` }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[var(--neutral-50)] px-6 py-20 md:px-10 md:py-32">
         <Image src={`/images/seg-${seg.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-50" style={{ objectPosition: "center right" }} />

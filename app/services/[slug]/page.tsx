@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SERVICES, getService } from "@/lib/services";
 
 export function generateStaticParams() {
@@ -49,16 +49,14 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: svc.name, href: `/services/${svc.slug}` }]} />
+
       {/* Hero */}
       <section className="relative overflow-hidden bg-[var(--neutral-50)] px-6 py-20 md:px-10 md:py-32">
         <Image src={`/images/svc-${svc.slug}.png`} alt="" fill priority sizes="100vw" aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover opacity-50" style={{ objectPosition: "center right" }} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0" style={{ background: "linear-gradient(90deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.7) 55%, rgba(250,250,248,0.5) 100%)" }}></div>
         <div className="relative z-10 mx-auto max-w-3xl">
-          <nav aria-label="Breadcrumb" className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "rgba(10,10,10,0.4)" }}>
-            <Link href="/services" className="hover:text-[var(--accent)]">Services</Link>
-            <span className="mx-2">/</span>
-            <span style={{ color: "var(--accent)" }}>{svc.category}</span>
-          </nav>
+          <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--accent)" }}>{svc.category}</p>
           <h1 className="font-heading text-[2.5rem] font-bold leading-[0.95] tracking-tight text-[var(--primary)] md:text-6xl">{svc.name}</h1>
           <p className="mt-4 font-heading text-lg font-semibold md:text-xl" style={{ color: "var(--accent)" }}>{svc.tagline}</p>
           <p className="mt-6 max-w-2xl text-base leading-relaxed md:text-lg" style={{ color: "rgba(10,10,10,0.6)" }}>{svc.intro}</p>

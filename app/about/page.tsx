@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero, CtaBanner } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -27,6 +28,7 @@ const PILLARS = [
 export default function AboutPage() {
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "About", href: "/about" }]} />
       <PageHero
         eyebrow="About us"
         title={

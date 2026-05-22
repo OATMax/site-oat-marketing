@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -33,6 +34,7 @@ const SECTIONS = [
 export default function PrivacyPage() {
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Privacy Policy", href: "/privacy" }]} />
       <PageHero eyebrow="Legal" title={<>Privacy Policy</>} intro="Last updated May 2026. This policy explains what we collect and how we use it." />
       <section className="bg-white px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-3xl space-y-10">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -33,6 +34,7 @@ const SECTIONS = [
 export default function TermsPage() {
   return (
     <>
+      <Breadcrumbs trail={[{ name: "Home", href: "/" }, { name: "Terms of Use", href: "/terms" }]} />
       <PageHero eyebrow="Legal" title={<>Terms of Use</>} intro="Last updated May 2026. Please read these terms before using the site." />
       <section className="bg-white px-6 py-16 md:px-10 md:py-24">
         <div className="mx-auto max-w-3xl space-y-10">
